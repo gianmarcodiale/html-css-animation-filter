@@ -249,14 +249,63 @@
     filter: sepia(0.8) blur(5px);
     border-radius: 30%;
 }
+/* /Esercizio 8 */
+
+/* Esercizio 9 */
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img:hover {
+    animation-name: scale-effect;
+    animation-duration: 5s;
+}
+
+@keyframes scale-effect {
+    0% {
+
+    }
+
+    20% {
+        filter: blur(1px) contrast(1);
+        width: 350px;
+        border-radius: 10%;
+    }
+
+    40% {
+        filter: blur(2px) contrast(1.5);
+        width: 300px;
+        border-radius: 20%;
+    }
+
+    60% {
+        filter: blur(3px) contrast(2);
+        width: 250px;
+        border-radius: 30%;
+    }
+
+    80% {
+        filter: blur(4px) contrast(2.5);
+        width: 200px;
+        border-radius: 40%;
+    }
+}
+/* /Esercizio 9 */
+
+/* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+}
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
