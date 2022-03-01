@@ -300,9 +300,19 @@
 }
 
 .ex-10-icon:hover {
-    animation-name: spin;
-    animation-duration: 1s;
+    animation: spin 0.5s infinite;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+/* /Esercizio 10 */
 
 
 
