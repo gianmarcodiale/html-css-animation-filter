@@ -328,10 +328,6 @@
         transform: rotate(0deg);
     }
 
-    25% {
-        transform: rotate(90deg);
-    }
-
     50% {
         transform: rotate(270deg);
     }
@@ -340,10 +336,7 @@
         transform: rotate(0deg);
     }
 }
-
-
-
-
+/* /Esercizio 11 */
 
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -373,4 +366,68 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-right 0.5s;
+}
+
+@keyframes move-right {
+    0% {
+
+    }
+
+    100% {
+        left: 40%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-left 0.5s;
+}
+
+@keyframes move-left {
+    0% {
+
+    }
+
+    100% {
+        right: 40%;
+    }
+}
+/* /Esercizio 12 */
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: move-right 0.5s infinite;
+}
+
+@keyframes move-right {
+    0% {
+
+    }
+
+    25% {
+        left: 100%;
+        bottom: 0;
+    }
+
+    50% {
+        
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: move-left 0.5s;
+}
+
+@keyframes move-left {
+    0% {
+
+    }
+
+    100% {
+        right: 100%;
+    }
 }
